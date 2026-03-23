@@ -1,39 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Content Mafia Landing Page">
-    <meta name="keywords" content="Content Mafia, Landing Page, Marketing">
-    <meta name="author" content="Content Mafia Team">
-    <title>Content Mafia</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Mafia | Local Creator Marketplace for Main Street Brands</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#problems">Problems</a></li>
-            <li><a href="#how-it-works">How it Works</a></li>
-            <li><a href="#for-brands">For Brands</a></li>
-            <li><a href="#for-creators">For Creators</a></li>
-            <li><a href="#campaign">Campaign</a></li>
-            <li><a href="#marketplace-preview">Marketplace Preview</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <!-- Hero Section -->
-    <header id="home">
-        <h1>Welcome to Content Mafia</h1>
-        <p>Your go-to platform for creators and brands.</p>
-        <a href="#sign-up" class="cta-button">Sign Up Now</a>
-    </header>
-    
-    <!-- Problems Section -->
-    <section id="problems">
-        <h2>Problems We Solve</h2>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">CM</span>
+        <span class="logo-text">Content Mafia</span>
+      </a>
+      <div class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#for-brands">For Brands</a>
+        <a href="#for-creators">For Creators</a>
+        <a href="#campaign">Launch Campaign</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-ghost" id="signInBtn">Sign In</button>
+        <button class="btn btn-primary" id="getStartedNav">Get Started</button>
+      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#for-brands">For Brands</a>
+      <a href="#for-creators">For Creators</a>
+      <a href="#campaign">Launch Campaign</a>
+      <button class="btn btn-ghost">Sign In</button>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">Local Creator Marketplace</div>
+      <h1>Meet Local Creators to <span class="highlight">Grow Your Business</span></h1>
+      <p class="hero-subtitle">Get matched with the top 1% of local content creators near you. Engaging content delivered right to your inbox. Only pay for what you use.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary btn-lg" id="findCreatorBtn">Find a Creator</button>
+        <button class="btn btn-outline btn-lg" id="becomeCreatorBtn">Become a Creator</button>
+      </div>
+      <div class="hero-segments">
+        <span class="segment-tag">Retail & Brick & Mortar</span>
+        <span class="segment-tag">Restaurants</span>
+        <span class="segment-tag">Small Biz DTC Brands</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems We Solve -->
+  <section class="problems" id="problems">
+    <div class="section-inner">
+      <h2 class="section-title">The Problem</h2>
+      <p class="section-subtitle">Local businesses and creators face real challenges that no one is solving.</p>
+      <div class="problems-grid">
+        <div class="problem-col">
+          <h3>For Brands</h3>
+          <ul class="problem-list">
+            <li>Need consistent content for social media and ads</li>
+            <li>Don't know how to work directly with local creators</li>
+            <li>Agencies and influencers are expensive and complicated</li>
+            <li>Need to own their content strategy and budget</li>
+            <li>No easy way to find local creators outside of major US markets</li>
+          </ul>
+        </div>
+        <div class="problem-col">
+          <h3>For Creators</h3>
+          <ul class="problem-list">
+            <li>Individuals want opportunities to create content and get paid</li>
+            <li>Most creators are not business-savvy</li>
+            <li>Creators don't want to find clients or manage billing</li>
+            <li>People think only influencers can be creators</li>
+            <li>People create engaging content every day but don't monetize it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-inner">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">A streamlined marketplace connecting local brands with nearby content creators.</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Create Your Profile</h3>
+          <p>Brands list their business and location. Creators showcase their portfolio and set their prices.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Get Matched Locally</h3>
+          <p>Our marketplace connects you with creators and brands in your area. Browse, search, and discover talent nearby.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Create & Submit Content</h3>
+          <p>Brands post briefs, creators respond with content. Files are watermarked until purchased.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Pay for What You Use</h3>
+          <p>Only purchase the content you love. Direct payments, no middlemen, no long-term contracts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- For Brands -->
+  <section class="for-brands" id="for-brands">
+    <div class="section-inner">
+      <div class="split-layout">
+        <div class="split-content">
+          <div class="section-badge">For Brands</div>
+          <h2>Content at Scale, Without the Agency Price Tag</h2>
+          <p>Stop overpaying for inconsistent content. Access a pool of local creators who know your community and can produce authentic, engaging content on demand.</p>
+          <ul class="feature-list">
+            <li>
+              <span class="feature-icon">&#9881;</span>
+              <div>
+                <strong>Business Profile</strong>
+                <span>Claim your location and showcase your brand to creators nearby</span>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">&#9998;</span>
+              <div>
+                <strong>Content Briefs</strong>
+                <span>Create briefs with our AI-powered generator and get exactly the content you need</span>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">&#128176;</span>
+              <div>
+                <strong>Budget Calculator</strong>
+                <span>AI-powered recommendations to optimize your content spend</span>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">&#128206;</span>
+              <div>
+                <strong>Asset Marketplace</strong>
+                <span>Browse tagged content and purchase individual assets on demand</span>
+              </div>
+            </li>
+          </ul>
+          <button class="btn btn-primary btn-lg" id="brandSignupBtn">Start as a Brand</button>
+        </div>
+        <div class="split-visual">
+          <div class="mock-card brand-mock">
+            <div class="mock-header">
+              <div class="mock-avatar">DT</div>
+              <div>
+                <div class="mock-name">Duke's Tavern</div>
+                <div class="mock-location">Buffalo, NY</div>
+              </div>
+            </div>
+            <div class="mock-brief">
+              <div class="mock-brief-label">Active Brief</div>
+              <div class="mock-brief-title">Weekend Brunch Reel</div>
+              <div class="mock-brief-detail">Looking for 15-30s reels showcasing our new brunch menu. Must include food close-ups and ambiance.</div>
+              <div class="mock-brief-budget">Budget: $50-150 per reel</div>
+            </div>
+            <div class="mock-stats">
+              <div><strong>12</strong><span>Submissions</span></div>
+              <div><strong>3</strong><span>Purchased</span></div>
+              <div><strong>$350</strong><span>Spent</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- For Creators -->
+  <section class="for-creators" id="for-creators">
+    <div class="section-inner">
+      <div class="split-layout reverse">
+        <div class="split-content">
+          <div class="section-badge creator-badge">For Creators</div>
+          <h2>Turn Your Content Into Cash</h2>
+          <p>You already create amazing content every day. Now get paid for it. No need to be an influencer, no need to find clients, no need to manage invoices.</p>
+          <ul class="feature-list">
+            <li>
+              <span class="feature-icon">&#128247;</span>
+              <div>
+                <strong>Creator Profile</strong>
+                <span>Build your portfolio and showcase your best work to local brands</span>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">&#128200;</span>
+              <div>
+                <strong>Upload & Price</strong>
+                <span>Upload content, tag brands/locations, and set your own prices with AI guidance</span>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">&#128172;</span>
+              <div>
+                <strong>Direct Messaging</strong>
+                <span>Communicate directly with brands &mdash; no gatekeepers</span>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">&#128179;</span>
+              <div>
+                <strong>Get Paid Instantly</strong>
+                <span>Secure payment processing. Get paid when your content is purchased.</span>
+              </div>
+            </li>
+          </ul>
+          <button class="btn btn-secondary btn-lg" id="creatorSignupBtn">Join as a Creator</button>
+        </div>
+        <div class="split-visual">
+          <div class="mock-card creator-mock">
+            <div class="mock-header">
+              <div class="mock-avatar creator-avatar">JR</div>
+              <div>
+                <div class="mock-name">Jordan R.</div>
+                <div class="mock-location">Content Creator &bull; Buffalo, NY</div>
+              </div>
+            </div>
+            <div class="mock-portfolio">
+              <div class="mock-thumb"></div>
+              <div class="mock-thumb"></div>
+              <div class="mock-thumb"></div>
+              <div class="mock-thumb"></div>
+              <div class="mock-thumb"></div>
+              <div class="mock-thumb"></div>
+            </div>
+            <div class="mock-stats">
+              <div><strong>48</strong><span>Uploads</span></div>
+              <div><strong>23</strong><span>Sold</span></div>
+              <div><strong>$2,150</strong><span>Earned</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Launch Campaign -->
+  <section class="campaign" id="campaign">
+    <div class="section-inner">
+      <div class="campaign-banner">
+        <div class="campaign-content">
+          <div class="campaign-badge">Launch Campaign</div>
+          <h2>Create. Upload. Earn $500.</h2>
+          <p>Visit one of our participating restaurants, review their content brief, and upload your best reel to Content Mafia.</p>
+          <div class="campaign-prizes">
+            <div class="prize">
+              <div class="prize-place">1st</div>
+              <div class="prize-amount">$300</div>
+            </div>
+            <div class="prize">
+              <div class="prize-place">2nd</div>
+              <div class="prize-amount">$150</div>
+            </div>
+            <div class="prize">
+              <div class="prize-place">3rd</div>
+              <div class="prize-amount">$50</div>
+            </div>
+          </div>
+          <p class="campaign-detail">Each brand gets access to up to 10 reels. Buy additional assets on the marketplace.</p>
+          <div class="campaign-timeline">
+            <span class="timeline-icon">&#9200;</span>
+            <span>14-Day Campaign</span>
+          </div>
+        </div>
+        <div class="campaign-brands">
+          <h3>Participating Brands</h3>
+          <div class="brand-cards">
+            <div class="brand-card">
+              <div class="brand-card-avatar">DT</div>
+              <div class="brand-card-name">Duke's Tavern</div>
+            </div>
+            <div class="brand-card">
+              <div class="brand-card-avatar">LC</div>
+              <div class="brand-card-name">Lexington Coop</div>
+            </div>
+            <div class="brand-card">
+              <div class="brand-card-avatar">HB</div>
+              <div class="brand-card-name">Half Baked Cookies</div>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-lg campaign-cta" id="joinCampaignBtn">Join the Campaign</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marketplace Preview -->
+  <section class="marketplace-preview" id="marketplace">
+    <div class="section-inner">
+      <h2 class="section-title">Browse the Marketplace</h2>
+      <p class="section-subtitle">Discover local creators and brands near you.</p>
+      <div class="marketplace-tabs">
+        <button class="tab-btn active" data-tab="creators">Find a Creator</button>
+        <button class="tab-btn" data-tab="brands">Find a Brand</button>
+      </div>
+      <div class="marketplace-grid" id="marketplaceGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="final-cta">
+    <div class="section-inner">
+      <h2>Ready to Transform Your Content Strategy?</h2>
+      <p>Join the marketplace that's connecting Main Street brands with local content creators.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary btn-lg" id="finalBrandBtn">I'm a Brand</button>
+        <button class="btn btn-outline-light btn-lg" id="finalCreatorBtn">I'm a Creator</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">CM</span>
+        <span class="logo-text">Content Mafia</span>
+      </div>
+      <p class="footer-tagline">Local Creator Marketplace for Main Street Brands</p>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">For Brands</a>
+        <a href="#">For Creators</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Content Mafia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Sign Up Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="signupModal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h2 id="modalTitle">Get Started</h2>
+      <p id="modalSubtitle">Join Content Mafia today.</p>
+      <form id="signupForm" class="signup-form">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" placeholder="Your name" required>
+        </div>
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="signupType">I am a...</label>
+          <select id="signupType" required>
+            <option value="">Select one</option>
+            <option value="brand">Brand / Business</option>
+            <option value="creator">Content Creator</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="signupCity">City</label>
+          <input type="text" id="signupCity" placeholder="Buffalo, NY" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-full">Join the Waitlist</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
         <p>We tackle the most pressing issues faced by brands and creators in the evolving landscape of digital content.</p>
     </section>
     
